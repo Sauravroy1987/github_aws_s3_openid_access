@@ -72,7 +72,7 @@ jobs:
           aws-region: eu-north-1
       - name: Deploy site # After permission, do access AWS S3
         id: deploy
-        uses: ./.github/actions/deploy-s3-docker
+        uses: ./.github/actions/deploy-s3-javascript
         with:
           bucket: github-security-hosting-demo-saurav
           dist-folder: ./dist
